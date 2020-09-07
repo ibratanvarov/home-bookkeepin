@@ -1,0 +1,10 @@
++--------+----------+----------+---------------+----------------------------------------------------+------------+
+| Domain | Method   | URI      | Name          | Action                                             | Middleware |
++--------+----------+----------+---------------+----------------------------------------------------+------------+
+|        | GET|HEAD | /        |               | Closure                                            | web        |
+|        | GET|HEAD | api/user |               | Closure                                            | api        |
+|        |          |          |               |                                                    | auth:api   |
+|        | GET|HEAD | income   | income.index  | App\Http\Controllers\TransactionsController@index  | web        |
+|        | POST     | income   | income.store  | App\Http\Controllers\TransactionsController@income | web        |
+|        | GET|HEAD | index    | index.history | App\Http\Controllers\RecalculationController@index | web        |
++--------+----------+----------+---------------+----------------------------------------------------+------------+
