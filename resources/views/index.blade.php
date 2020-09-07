@@ -33,8 +33,8 @@
                                     <td>{{$history->type->name}}</td>
                                     <td>{{$history->category->name}}</td>
                                     <td>{{$history->created_at}}</td>
-                                    <td>{{$history->sum}}</td>
-                                    <td>{{$history->total}}</td>
+                                    <td>{{number_format("$history->sum",2,"."," ")}}</td>
+                                    <td>{{number_format("$history->total",2,"."," ")}}</td>
                                     <td>{{$history->comment}}</td>
                                     <td>{{$history->user->name}}</td>
                                 </tr>
